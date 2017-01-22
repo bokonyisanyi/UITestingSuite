@@ -17,7 +17,7 @@ To run the test suite please follow these steps:
   SpecRun.Runner.1.5.2 <br>
   SpecRun.SpecFlow.1.5.2 <br>
   </ul>
-  Might these packages should be added (Tools -> Extensions and Updates)
+  Might these packages should be installed (Tools -> Extensions and Updates)
   
   The test report can be found in the outpot of the test execution in the "Report file:..." section
   
