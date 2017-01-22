@@ -25,19 +25,14 @@ namespace UITestingSuite
         {
             driver = new ChromeDriver();
             driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+            driver.Url = "http://uitest.duodecadits.com";
             PageFactory.InitElements(driver, homePage);
             PageFactory.InitElements(driver, formPage);
             PageFactory.InitElements(driver, errorPage);
             PageFactory.InitElements(driver, helloPage);
             PageFactory.InitElements(driver, page);
         }
-
-        [Given(@"I opened a Chrome and UI Testing page")]
-        public void GivenIOpenedAChromeAndUITestingPage()
-        {            
-            driver.Url = "http://uitest.duodecadits.com";
-        }        
-
+       
         [When(@"I click on Home Button")]
         public void WhenIclickOnHomeButton()
         {
